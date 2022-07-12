@@ -1,0 +1,360 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="{% static 'toText/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'Accueil.css' %}" media="screen">
+<meta name="generator" content="Nicepage 4.13.4, nicepage.com">
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<meta name="generator" content="Nicepage 4.13.4, nicepage.com">
+<link id="u-theme-google-font" rel="stylesheet" href="{% static 'roboto.css' %}">
+<link id="u-page-google-font" rel="stylesheet" href="{% static 'playFair.css' %}">
+  <style>a:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    margin: auto;
+  
+  }
+  </style>
+<style>
+  body{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#nav {
+  list-style-type: none;
+  margin-top:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F44336;
+}
+
+.li {
+  float: left;
+}
+
+.li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #393f4d;
+  color: #feda6a;
+  font-weight: bold;
+}
+.form-style button{
+
+  width: 89%;
+	height:70%;
+	padding: 5%;
+	background: #feda6a;
+	border-bottom: 2px solid #393f4d;;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	color: #393f4d;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Times New Roman";
+}
+
+.form-style button:hover {
+  background-color: #393f4d;
+  color: #feda6a;
+  font-weight: bold;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.left {
+  left: 15;
+  border-right: 0px #feda6a solid;
+}
+
+.right {
+  right: 0;
+  border-left: 1px #feda6a solid;
+}
+
+.mytext {
+    border:1px solid #393f4d;
+    border-right:none;
+    padding:4px;
+    margin:0px;
+    float:left;
+    height:32px;
+    overflow:hidden;
+    line-height:16px;
+    width: 300px;
+    margin-left: 54px;
+  }
+
+  .mic {
+      border:1px solid #393f4d;
+      background:#0082E6;
+      vertical-align:top;
+      padding:0px;
+      margin:0;
+      float:left;
+      height:42px;
+      overflow:hidden;
+      width:5em;
+      text-align:center;
+      line-height:16px;
+      color: white;
+  }
+  
+
+.submit {
+  color: whitesmoke;
+    border:1px solid #393f4d;
+    height: 42px;
+    width: 160px;
+    text-align: center;
+    background-color: #0082E6;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Times New Roman";
+    vertical-align:top;
+    border-radius: 25px;
+}
+.submit:hover {
+  background-color: #BA000D;
+  font-weight: bold;
+  cursor: pointer;
+}
+.td {
+  color: #212529;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.form-style{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+
+}
+.form-style h1, .form-style a{
+	padding: 20px 0;
+  font-size: 24px;
+	font-weight: bold;
+  font-family: "Times New Roman";
+	text-align: center;
+	margin: -16px -16px 16px -16px;
+  color:white;
+}
+.form-style input[type="text"],
+.form-style input[type="password"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color:#0000a0 ;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style input[type="text"]:focus,
+.form-style input[type="password"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style textarea:focus,
+.form-style select:focus
+{
+	box-shadow: 0 0 5px #0000a0;
+	padding: 3%;
+	border: 1px solid #0000a0;
+}
+
+.site-form span,label{
+  font-weight: bold;
+}
+.errorlist{
+    color: red;
+    font-weight: bold;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+</style>
+
+
+
+
+<title>Homepage</title>
+<link rel="stylesheet" href="{% static 'font-awesome.min.css' %}">
+</head>
+<body >
+
+  <nav >
+    <label class="logo"> <a href="/" style="text-decoration: none; color: white; font-size: 1em;"> FingersTalk</a></label>
+    <ul>
+      <li><a  {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %} href="{% url 'home' %}">Home</a></li>
+      <li ><a {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}  href="{% url 'about' %}">About</a></li>
+      <li ><a {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}  href="{% url 'contact' %}">Contact</a></li>
+      {% if user.is_authenticated %}
+    <li><a href="{% url 'logout' %}">Logout</a></li>
+    {% else %}
+      <li><a href="{% url 'login' %}">Login</a></li>
+    {% endif %}
+    </ul>
+  </nav>
+<div class="wrapper" >
+  {% block content %}
+  {% endblock %}
+</div>
+
+<script src="{% static 'jquery-3.4.1.slim.min.js' %}"></script>
+<script src="{% static 'popper.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<script class="u-script" type="text/javascript" src="{% static 'toText/jquery.js' %}" defer=""></script>
+<script class="u-script" type="text/javascript" src="{% static 'toText/nicepage.js' %}" defer=""></script>
+
+
+</body>
+</html>

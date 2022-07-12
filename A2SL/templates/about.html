@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container" >
+<h2>VERSION 1.0.0</h2>
+ 	<hr>
+	<h4 class="text-dark" >"A better Technology, means simply a better Morocco  <img width="90" height="50" src="/static/morocco.png" />" </h2> 
+	<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 offset-sm-3 mt-4 mb-4">
+				<h2 class="text-center text-dark">Our Expert Team</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row" style="text-align: center;">
+				<div class="col-md-4" style="margin: auto;">
+					<div class="card-box text-center">
+						<div class="user-pic">
+							<img src="{% static 'images/elqadi.jpg' %}"  width="350" class="rounded-circle" alt="User Pic">
+						</div>
+						<h4>Pr. Abderrahim EL QADI</h4>
+						<h6>PES, ENSAM Rabat</h6>
+						<hr>
+						<p>Information Retrieval
+							Latent Semantic Analysis
+							Text Mining
+							Web Mining
+							Data Mining and Knowledge Discovery
+							Sentiment Analysis
+							Text Classification
+							Ontologies
+							Web Content Extraction.</p>
+						<hr>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			
+
+			<div class="col-md-6">
+				<div class="card-box text-center">
+					<div class="user-pic">
+						<img src="{% static 'images/oussama.jpg' %}" width="350" class="img-fluid" alt="User Pic">
+					</div>
+					<h4>Oussama OUARDINI</h4>
+					<h6>Data Science & Artificial Intelligence Student</h6>
+					<hr>
+					<p>Oussama is an inquisitive and driven person. He has a deep interest in Data science and Machine learning. He is an enthusiastic and ambitious person which love solving complex problems by finding solutions of any tech problem.
+						He is pursuing an engineering degree in data science and AI.</p>
+					<hr>
+					<a href="#" class="btn btn-primary">Know More</a>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card-box text-center">
+					<div class="user-pic">
+						<img src="{% static 'images/khalid.jpeg' %}" width="350" class="img-fluid" alt="User Pic">
+					</div>
+					<h4>Khalid TOUNOUSSI</h4>
+					<h6>Data Science & Artificial Intelligence Student</h6>
+					<hr>
+					<p>Khalid is a curious Student. he has experience in Software enginnering. He believes in continuous learning. he has worked on many projects in Artificial Intelligence field. he is very ambitious and enthusiastic to learn new things and share his knowledge with others.</p>
+					<hr>
+					<a href="#" class="btn btn-primary">Know More</a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</div>
+	{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="u-body u-xl-mode"> 
+<section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_5737">
+  <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+    <div >
+      <img  class="u-logo-image u-logo-image-1" src="{% static 'logo.png' %}" height="200">
+    </div>
+    <div  class="u-container-style">
+      <div class="u-container-layout u-valign-top u-container-layout-1">
+        <h1 class="u-align-center u-custom-font u-text u-text-2">FingersTalk</h1>
+        <p class="u-align-center u-text u-text-3">Ce projet a pour objectif de traduire la langue de signe vers la langue parlée (vice versa), réalisé dans le cadre du PFE par les étudiants : Oussama OUARDINI et Khalid TOUNOUSSI. Encadré par Pr. Abderrahim EL QADI!</p>
+        </p>
+      </div>
+    </div>
+    <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row" >
+          <div class="u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-md u-align-right-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+            <div style="text-align: center" class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-3">
+              <a style="width: 160px; height: 70px" href="/home" class="u-btn u-btn-round u-button-style u-palette-1-base u-radius-50 u-btn-2"> <div class="row" style="  display: flex; align-items: center;"><img height="40"  src=" {% static 'sign.svg' %}"> <span style="margin-left: 5px">Signify </span></div></a>
+            </div>
+          </div>
+          <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+            <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-4">
+              <a style="width: 190px; height: 0px" href="/totext/home" class="u-border-2 u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-text-black u-text-hover-white u-btn-3"><span class="u-icon"><div class="row" style="  display: flex; align-items: center;"> <img width="40" src=" {% static 'text.png' %}">&nbsp; <span style="margin-left: 5px">Textify </span> </div> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+{% endblock %}
